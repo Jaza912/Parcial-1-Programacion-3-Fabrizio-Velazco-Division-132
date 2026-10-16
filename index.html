@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 1 Programacion 3 Division 132</title>
+    <link rel="stylesheet" href="estilos.css"> <!-- conecta el css -->
+</head>
+<body>
+    <!-- encabezado de la parte 1-->
+     <header>
+        <h1>Parcial 1 - Division 132</h1>
+    </header>
+    <main>
+
+    <!-- aclaraciones mias: los comentarios que hice los hice con mis palabras, quizas me puedo equivocar en algunas cosas. A los botones y a la barra de busquedad no les di funcionalidad pq no lo pedia la consigna-->
+        <section class="usuarios">
+            <!-- cuando se hace click wn users se renderiza la tabla desde javascript -->
+            <h2 id="titulo-users">Users</h2>
+ 
+            <hr>
+            <div class="controles">
+                <div class="acciones">
+                    <!-- mismo name para que se elija solo uno nomas -->
+                    <div class="filtros">
+                        <label><input type="radio" name="estado" value="active" checked> Active</label>
+                        <label><input type="radio" name="estado" value="inactive"> Inactive</label>
+                        <label><input type="radio" name="estado" value="all"> All</label>
+                    </div>
+ 
+                    <!-- aca estan los botones, los hice sin uso -->
+                    <div class="botones">
+                        <button type="button">CREATE</button>
+                        <button type="button" disabled>DEACTIVATE</button>
+                        <button type="button" disabled>RESET PASSWORD</button>
+                    </div>
+                </div>
+ 
+                <!-- barra de busqueda sin uso tbm -->
+                <input type="search" id="buscador" placeholder="Search Users">
+            </div>
+ 
+            <!-- div vacio que lo llena javascript desde el index.js-->
+            <div id="users-container"></div>
+        </section>
+    </main>
+ 
+    <!-- footer con mi nombre y apellido pedido en la parte 1 -->
+    <footer>
+        <p>Fabrizio Velazco</p>
+    </footer>
+ 
+    <script src="index.js"></script> <!-- conecta el javascript -->
+</body>
+</html>
+ 
